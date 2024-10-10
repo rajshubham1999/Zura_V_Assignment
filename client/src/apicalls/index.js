@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export const axiosInstance = axios.create({
-    baseURL:"http://localhost:3001" ,
+    baseURL:"https://zuraventurebackend-ju1t.onrender.com" ,
     headers: {
         'Content-Type': 'application/json'
     }

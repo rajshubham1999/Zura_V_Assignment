@@ -17,7 +17,7 @@ function AccountInfo() {
         try {
             const response = await GetCurrentUser();
             if (response.success) {
-                console.log("userdetails=>", response.data);
+                
                 setUserName(response.data.name);
                 setUserEmail(response.data.email)
             }

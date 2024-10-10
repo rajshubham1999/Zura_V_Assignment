@@ -20,11 +20,11 @@ function Register() {
         if(response.success){
           message.success(response.message);
           navigate("/login");
-          console.log(response.message)
+          
         }
         else{
           message.error(response.message);
-          console.log(response.message)
+         
         }
       }catch(err){
         message.error(err);

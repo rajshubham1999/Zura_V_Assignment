@@ -1,0 +1,160 @@
+
+   .sidebar {
+    width: 23.75rem; /* 380px */
+    height: 100vh;
+    padding-top: 1rem; /* 16px */
+    border-radius: 0 1.3125rem 1.3125rem 0; /* 21px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3E8FF;
+    transition: width 0.3s; /* Smooth transition for width changes */
+  }
+  
+  .icon-image {
+    width: 21.875rem; /* 350px */
+    height: 3.125rem; /* 50px */
+    padding: 0.6875rem 0.6875rem 0.6875rem 1.3125rem; /* 11px 11px 11px 21px */
+    display: flex;
+    align-items: center;
+    gap: 0.8125rem; /* 13px */
+  }
+  
+  .logoimage, .logoname {
+    height: 2.5rem; /* 40px */
+  }
+  
+  .containerbox {
+    width: 100%;
+    margin-top: 1.25rem; /* 20px */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem; /* 10px */
+  }
+  
+  .container-value {
+    width: 100%;
+    padding: 0 0.9375rem; /* 15px */
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; /* 10px */
+    flex: 1;
+  }
+  
+  .values {
+    width: 80%;
+    height: 2.5rem; /* 40px */
+    border-radius: 1.25rem; /* 20px */
+    padding: 0.3125rem 1.5625rem; /* 5px 25px */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+    background-color: #F3E8FF;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: flex-start;
+  }
+  
+  .icons {
+    margin-right: 0.625rem; /* 10px */
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  .values:hover {
+    color: #fff;
+    background-color: purple;
+  }
+  
+  .help-button {
+    width: 80%;
+    padding: 0.625rem; /* 10px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 1.3125rem; /* 21px */
+    margin-bottom: 0.625rem; /* 10px */
+  }
+  
+  .help-icon {
+    font-size: 1.5rem; /* 24px */
+    color: gray;
+  }
+  
+  .user-profile {
+    width: 80%;
+    padding: 0.9375rem; /* 15px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 0 0 1.3125rem 1.3125rem; /* 21px */
+    margin-bottom: 1.25rem; /* 20px */
+  }
+  
+  .user-image {
+    width: 2.5rem; /* 40px */
+    height: 2.5rem; /* 40px */
+    border-radius: 50%;
+    margin-right: 0.625rem; /* 10px */
+  }
+  
+  .username {
+    font-weight: bold;
+    color: gray;
+    display: flex;
+    gap:20px;
+
+  }
+  
+  .values.active {
+    color: #fff;
+    background-color: purple;
+  }
+  
+  .values:hover {
+    color: #fff;
+    background-color: purple;
+  }
+  
+  .username:hover {
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .sidebar {
+      
+      width:100%;
+      height:450px;
+    }
+  
+    .icon-image {
+      width: 100%;
+      padding: 0.5rem; /* 8px */
+    }
+  
+    .containerbox {
+      width: 100%;
+      gap: 0.5rem; /* 8px */
+    }
+  
+    .values {
+      width: 90%;
+      height: 2.25rem; /* 36px */
+      padding: 0.25rem 1rem; /* 4px 16px */
+    }
+  
+    .help-button, .user-profile {
+      width: 85%;
+      padding: 0.5rem; /* 8px */
+    }
+  }
+  
+  

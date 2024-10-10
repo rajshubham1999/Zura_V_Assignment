@@ -1,0 +1,194 @@
+
+ .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.homecontainer {
+  width: 70%;
+  margin-top: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  width: 100%;
+  margin-top: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading > p {
+  font-family: Roboto, sans-serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #7E22CE;
+}
+
+.homepageimage {
+  width: 100%;
+  max-width: 21.875rem;
+  height: auto;
+  border: 0.0625rem solid green;
+  margin-top: 0.625rem;
+}
+
+.homepageimage > img {
+  width: 100%;
+  height: auto;
+}
+
+.paragraph {
+  width: 100%;
+  max-width: 43.75rem;
+  color: #838383;
+  text-align: center;
+  margin: 0.625rem 0;
+}
+
+.create {
+  width: 15.625rem;
+  height: 2.8125rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.3125rem;
+  margin-top: 1.25rem;
+}
+
+.create > img {
+  margin-left: 0.1875rem;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+
+.create-project {
+  width: 12.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.create:hover {
+  cursor: pointer;
+  border: 0.125rem solid gray;
+}
+
+.modales {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modales-content {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.3125rem;
+  width: 90%;
+  max-width: 37.5rem;
+  text-align: left;
+  height: 12rem;
+}
+
+.modales-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.modales-content p {
+  margin: 1rem 0;
+}
+
+.modales-content input {
+  width: 97%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.error-message {
+  margin-top: 0.5rem;
+}
+
+.modales-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.modales-buttons button {
+  margin-left: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.modales-buttons .cancel-button {
+  background-color: transparent;
+  color: red;
+}
+
+.modales-buttons .cancel-button:hover {
+  border-bottom: 0.0625rem solid red;
+}
+
+.modales-buttons .create-button {
+  background-color: #7E22CE;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .homecontainer {
+    width: 90%;
+  }
+
+  .heading > p {
+    font-size: 2.1875rem;
+  }
+
+  .paragraph {
+    font-size: 0.875rem;
+  }
+
+  .create-project {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .create {
+    flex-direction: column;
+    height: auto;
+    padding: 0.625rem;
+  }
+
+  .create > img {
+    margin: 0;
+    margin-bottom: 0.625rem;
+  }
+
+  .create-project {
+    width: 100%;
+  }
+}
+
+

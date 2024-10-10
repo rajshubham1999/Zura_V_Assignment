@@ -1,0 +1,156 @@
+.login-container {
+   
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.left-login-container {
+    width: 57%;
+    height: 100vh;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.left-login-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-login-container {
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 100vh;
+    width: 42%;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upperhalf-login {
+    margin-top: 5px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > img {
+    width: 90px;
+    height: 90px;
+}
+
+.welcome-text {
+    width: 250px;
+    height: 200px;
+}
+
+.text1 {
+    margin: 10px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48.79px;
+    text-align: center;
+    color: #7E22CE;
+}
+
+.text2 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.79px;
+    text-align: center;
+    color: #7E22CE;
+}
+
+.login-form {
+    width: 400px; 
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.login-form .ant-input,
+.login-form .ant-input-password,
+.login-form .ant-btn {
+    height: 50px; 
+    width: 100%; 
+    font-size: 16px; 
+}
+
+.login-form .ant-btn {
+    margin-top: 10px; 
+}
+
+.custom-submit-button {
+    background-color: #7E22CE !important;
+    border-color: #7E22CE !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .left-login-container, .right-login-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .login-form {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .left-login-container, .right-login-container {
+        height: auto; 
+    }
+
+    .text1, .text2 {
+        font-size: 30px;
+    }
+
+    .login-form .ant-input,
+    .login-form .ant-input-password,
+    .login-form .ant-btn {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-login-container, .right-login-container {
+        height: auto;
+    }
+
+    .text1, .text2 {
+        font-size: 24px;
+    }
+
+    .login-form .ant-input,
+    .login-form .ant-input-password,
+    .login-form .ant-btn {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .login-form {
+        width: 80%; 
+    }
+}

@@ -1,0 +1,361 @@
+
+  :root {
+    font-size: 16px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.rightside-container {
+    width: 100%;
+    height:100vh;
+}
+
+.upload-uppermost {
+    width: 100%;
+    height: 6.25rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uppermostleft {
+    width: 37.5rem; 
+    height: 3.125rem; 
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    width: 37.5rem; 
+    height: 1.875rem; 
+    display: flex;
+    align-items: center;
+    margin-left: 0.625rem; 
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.starting-path {
+    color: #999999;
+}
+
+.ending-path {
+    color: #7E22CE;
+    font-weight: 700;
+}
+
+.uppermostright {
+    width: 12.5rem; 
+    height: 3.125rem; 
+    display: flex;
+    gap: 1.25rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-middle {
+    width: 100%;
+    height: 42.5rem; 
+}
+
+.title {
+    width: 12.5rem; 
+    height: 6.25rem; 
+    margin-left: 1.25rem; 
+    font-size: 1.875rem; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7E22CE;
+}
+
+.media-box {
+    margin-top: 0.625rem; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 16.875rem; 
+}
+
+.boxes {
+    width: 19.375rem; 
+    height: 6.25rem; 
+    gap: 0;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0.625rem; 
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.boxes:hover {
+    transform: scale(1.05);
+}
+
+.mediaimage {
+    width: 4.375rem; 
+    height: 4.375rem; 
+    padding: 0.9375rem; 
+    gap: 0;
+}
+
+.medianame {
+    height: 3.125rem; 
+    font-family: Arial, sans-serif;
+    font-size: 1rem; 
+    font-weight: 700;
+    line-height: 1.66rem; 
+    text-align: left;
+}
+
+.filesupload-container {
+    margin-top: 0.625rem; 
+    width: 100%;
+    height: 17.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #CCCCCC;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    background-color: #F3F3F3;
+}
+
+.uploadimage {
+    width: 6.25rem; 
+    height: 6.25rem; 
+    margin-bottom: 1.25rem; 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first {
+    font-size: 1.125rem; 
+    font-weight: bold;
+}
+
+.second {
+    font-size: 0.875rem; 
+    color: #888888;
+}
+
+.selectbutton {
+    margin-top: 1.25rem;
+    padding: 0.625rem 1.25rem; 
+    background-color: #7E22CE;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.selectbutton:hover {
+    background-color: #5E179C;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 1.25rem; 
+    border-radius: 0.625rem; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    width: 25rem; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.25rem; 
+    cursor: pointer;
+    position: absolute;
+    top: 0.625rem; 
+    right: 0.625rem; 
+}
+
+.modal-image {
+    width: 6.25rem; 
+    height: 6.25rem; 
+    margin-bottom: 1.25rem; 
+}
+
+.modal-input {
+    width: calc(100% - 2.5rem); 
+    padding: 0.625rem; 
+    margin: 0.625rem 0; 
+    border: 1px solid #cccccc;
+    border-radius: 0.3125rem; 
+}
+
+.upload-button {
+    padding: 0.625rem 1.25rem; 
+    background-color: #7E22CE;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #5E179C;
+}
+
+.episodes-table-container {
+    margin-top: 1.25rem; 
+    padding: 1.25rem; 
+    height: 12.5rem; 
+    border: 1px solid #999999;
+    border-radius: 0.625rem; 
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+}
+
+.episodes-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.episodes-table th,
+.episodes-table td {
+    padding: 0.625rem; 
+    border: 1px solid #ccc;
+}
+
+.episodes-table th {
+    background-color: #EDEDED;
+    color: #646464;
+}
+
+.episodes-table td {
+    text-align: center;
+}
+
+.action-button {
+    padding: 0.3125rem 0.625rem; 
+    margin: 0 0.3125rem; 
+    border: none;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+    color: white;
+}
+
+.edit-button {
+    color: black;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.delete-button {
+    color: black;
+}
+
+.delete-button:hover {
+    background-color: #e53935;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+
+  .main-container {
+    flex-direction: column; 
+  }
+  .rightside-container{
+    height:100vh;
+  }
+
+  .upload-uppermost {
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 1rem; 
+  }
+  .uppermostleft{
+    margin-top: 20px;
+  }
+  .uppermostleft, 
+  .uppermostright {
+    width: 100%; 
+    justify-content: flex-start; 
+  }
+
+  .media-box {
+    flex-direction: column; 
+    height: auto;
+  }
+
+  .boxes {
+    width: 100%; 
+    margin-bottom: 1rem; 
+  }
+
+  .filesupload-container {
+    width: 100%; 
+  }
+}
+@media(max-width:500px){
+  .uppermostleft{
+    margin-top: 30px;
+  }
+  .uppermostright{
+    width: 4rem;
+  }
+  .starting-path{
+    font-size: 15px;
+  }
+  .ending-path{
+    
+      font-size: 15px;
+    
+  }
+}
+.action-button {
+  padding: 0.5rem 1rem; 
+  margin: 0.2rem;       
+  font-size: 1rem;      
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+}
+
+.delete-button {
+  background-color: transparent; 
+  color: red;
+  font-weight: bold;
+}

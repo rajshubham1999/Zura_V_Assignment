@@ -1,0 +1,147 @@
+
+.register-container {
+   
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.left-register-container {
+    width: 57%;
+    height: 100vh;
+    transition: width 0.3s ease-in-out;
+}
+
+.left-register-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-register-container {
+    margin-top: 15px;
+    margin-left: 5px;
+    height: 100vh;
+    width: 42%;
+    transition: width 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upperhalf-register {
+    margin-top: 5px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > img {
+    width: 90px;
+    height: 90px;
+}
+
+.welcome-text {
+    width: 250px;
+    height: 200px;
+}
+
+.text1 {
+    margin: 10px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48.79px;
+    text-align: center;
+    color: #7E22CE;
+}
+
+.text2 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.79px;
+    text-align: center;
+    color: #7E22CE;
+}
+
+.register-form {
+    width: 400px; 
+    margin-top: 20px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.register-form .ant-input,
+.register-form .ant-input-password,
+.register-form .ant-btn {
+    height: 50px; 
+    width: 100%; 
+    font-size: 16px; 
+}
+
+.register-form .ant-btn {
+    margin-top: 10px; 
+}
+
+.custom-submit-button {
+    background-color: #7E22CE !important;
+    border-color: #7E22CE !important;
+}
+
+
+@media (max-width: 1024px) {
+    .left-register-container, .right-register-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-register-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .register-form {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .text1, .text2 {
+        font-size: 30px;
+    }
+
+    .register-form .ant-input,
+    .register-form .ant-input-password,
+    .register-form .ant-btn {
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text1, .text2 {
+        font-size: 24px;
+    }
+
+    .register-form .ant-input,
+    .register-form .ant-input-password,
+    .register-form .ant-btn {
+        height: 40px;
+        font-size: 12px;
+    }
+}
+

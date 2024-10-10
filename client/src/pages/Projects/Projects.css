@@ -1,0 +1,173 @@
+
+.projectcontainer {
+    width: 87%;
+    height: 37.5rem;
+    margin-top: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstcontainer {
+    width: 100%;
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projecttext {
+    width: 12.5rem;
+    height: 2.5rem;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7E22CE;
+}
+
+.buttoncreate {
+    width: 15.625rem;
+    height: 2.875rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.625rem 0;
+}
+
+.buttoncreate > img {
+    height: 1.875rem;
+}
+
+.buttoncreate > button {
+    width: 12.5rem;
+    height: 2.375rem;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.secondcontainer {
+    width: 98%;
+    height: 33.125rem;
+    margin-top: 0.7125rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectdetails {
+    width: 15.625rem;
+    height: 6.25rem;
+    margin: 1.25rem 0.625rem 0.1875rem 1.25rem;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.projectdetails-left {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectdetails-right {
+    width: 9.375rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectdetails-right-upper {
+    width: 8.75rem;
+    height: 3.4375rem;
+    margin: 0.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    width: 8.125rem;
+    height: 1.5625rem;
+    font-size: 1.0625rem;
+    font-weight: bold;
+    color: #7E22CE;
+}
+
+.episodes {
+    width: 7.5rem;
+    height: 1.25rem;
+    margin-top: 0.125rem;
+    font-size: 0.75rem;
+    align-items: left;
+}
+
+.lastupdated {
+    width: 8.4375rem;
+    height: 0.9375rem;
+    font-size: 0.625rem;
+    margin-left: 0.1875rem;
+    color: #969696;
+}
+
+.shortform {
+    height: 4.25rem;
+    width: 4.25rem;
+    border-radius: 0.625rem;
+    font-size: 1.875rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: peru;
+}
+
+@media (max-width: 768px) {
+    .firstcontainer {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .projecttext {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+
+    .buttoncreate {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+    }
+
+    .secondcontainer {
+        justify-content: center;
+    }
+
+    .projectdetails {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
+
+    .projectdetails-right {
+        width: 70%;
+    }
+
+    .projectdetails-left {
+        width: 20%;
+    }
+}

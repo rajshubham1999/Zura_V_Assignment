@@ -18,7 +18,7 @@ function Login() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const onFinish= async (values)=>{
-        console.log("values=>",values);
+        
         try{
           const response = await LoginUser(values);
           if(response.success){
@@ -29,7 +29,7 @@ function Login() {
           }
           else{
             message.error(response.message);
-            console.log(response.message)
+           
           }
         }catch(err){
           message.error(err);

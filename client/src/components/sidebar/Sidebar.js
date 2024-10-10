@@ -43,7 +43,7 @@ const Sidebar = () => {
       const currentUser = await GetCurrentUser();
       if (currentUser.success) {
         setUserDetails(currentUser);  
-        console.log("currentUser=>", currentUser);
+        
       } else {
         throw new Error('Failed to fetch user details');
       }
@@ -56,7 +56,7 @@ const Sidebar = () => {
     fetchCurrentUser();
   }, []);
 
-  console.log("details", userDetails);
+  
 
   return (
     <div>

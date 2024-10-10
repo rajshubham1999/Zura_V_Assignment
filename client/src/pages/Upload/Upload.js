@@ -43,7 +43,7 @@ function Upload() {
     try {
       const response = await GetCurrentProject(projectName);
       if (response.success) {
-        console.log("Project ID:", response.data);
+        
         setProjectId(response.data);
       } else {
         console.log("Failed to fetch project");
@@ -92,7 +92,7 @@ function Upload() {
     try {
       const response = await AddEpisode(episodeData);
       if (response.success) {
-        console.log('Episode added successfully:', response.data);
+       
         message.success("Successfully added the Episold");
         fetchEpisodes(projectId);
 
